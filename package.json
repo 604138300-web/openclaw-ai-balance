@@ -1,0 +1,73 @@
+{
+  "name": "@604138300-web/openclaw-ai-balance",
+  "version": "0.1.1",
+  "description": "显示 AI 提供商实时余额（DeepSeek 等）的 OpenClaw Control 插件",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "604138300-web"
+  },
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "balance",
+    "deepseek",
+    "usage"
+  ],
+  "files": [
+    "dist",
+    "openclaw.plugin.json",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "openclaw": ">=2026.10.6"
+  },
+  "dependencies": {
+    "typebox": "^1.3.17"
+  },
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ],
+    "controlUi": "./src/control-ui.ts",
+    "install": {
+      "clawhubSpec": "clawhub:@604138300-web/openclaw-ai-balance",
+      "npmSpec": "@604138300-web/openclaw-ai-balance",
+      "defaultChoice": "clawhub",
+      "minHostVersion": ">=2026.10.6"
+    },
+    "compat": {
+      "pluginApi": ">=2026.10.6"
+    },
+    "build": {
+      "openclawVersion": "2026.10.6"
+    },
+    "release": {
+      "publishToClawHub": true,
+      "publishToNpm": false
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/604138300-web/openclaw-ai-balance"
+  },
+  "homepage": "https://github.com/604138300-web/openclaw-ai-balance",
+  "bugs": {
+    "url": "https://github.com/604138300-web/openclaw-ai-balance/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "displayName": "AI Balance",
+  "categories": [
+    "tools"
+  ]
+}

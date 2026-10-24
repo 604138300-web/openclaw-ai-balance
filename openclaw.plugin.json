@@ -1,0 +1,20 @@
+{
+  "id": "ai-balance",
+  "name": "AI Balance",
+  "description": "在 OpenClaw Control 侧边栏显示 AI 提供商实时余额（DeepSeek 等）。",
+  "version": "0.1.1",
+  "configSchema": {
+    "type": "object",
+    "properties": {},
+    "additionalProperties": false
+  },
+  "activation": {
+    "onStartup": true
+  },
+  "controlUi": {
+    "entry": "dist/control-ui/index.js",
+    "styles": [
+      "dist/control-ui/index.css"
+    ]
+  }
+}
